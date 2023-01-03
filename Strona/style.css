@@ -26,6 +26,11 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
+p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .left-slide > div {
   height: 100%;
   width: 100%;
