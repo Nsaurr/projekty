@@ -11,22 +11,33 @@
     <div class="slider-container">
       <div class="left-slide">
         <div style="background-color: #09b838">
-          <h1>Metody publiczne</h1>
-          <p>
-            Metody publiczne są zadeklarowane w klasie i że są używane do wykonywania określonych akcji</p>
+          <h1>Więc czym są metody publiczne?</h1>
+          <p>Metody publiczne to metody, które są dostępne dla wszystkich klas. Oznacza to, że mogą być wywoływane z poziomu dowolnej klasy. Metody publiczne są używane do udostępniania funkcjonalności innym klasom i są ważnym elementem interfejsu klasy.</p>
+        </div>
+        <div style="background-color: #09b838">
+          <h1>Przykład i wyjaśnienie metod publicznych</h1>
+          <p>Każda z tych metod jest publiczna, co oznacza, że mogą być one wywoływane z każdego miejsca w kodzie programu. Metoda add zwraca sumę dwóch liczb całkowitych podanych jako jej argumenty. Metoda getNameLength zwraca długość podanego jako argumentu imienia. Metoda isEven sprawdza, czy podana jako argument liczba jest parzysta i zwraca wartość true lub false w zależności od tego, czy jest parzysta czy nie. Metoda printMessage wyświetla na konsoli podany jako argument komunikat</p>
         </div>
         <div style="background-color: #FD3555">
-          <h1>Metody prywatne</h1>
-          <p> Są wykorzystywane w interfesjach żeby ograniczyć duplikowanie się kodu.</p>
+          <h1>Więc czym są metody prywatne?</h1>
+          <p>Metody prywatne to metody, które są dostępne tylko wewnątrz klasy, w której są zdefiniowane. Oznacza to, że nie mogą być wywoływane z poziomu innych klas. Metody prywatne są często używane w celu ukrycia szczegółów implementacyjnych przed innymi klasami.</p>
+        </div>
+        <div style="background-color: #FD3555">
+          <h1>Przykład i wyjaśnienie metod prywatnych</h1>
+          <p>W przykładzie obok metoda calculateArea jest prywatna i dostępna tylko wewnątrz klasy Circle. Nie jest dostępna z poziomu innych klas. Metoda ta jest jednak wywoływana wewnątrz metody publicznej getArea, która zwraca pole koła. To umożliwia innym klasom uzyskanie dostępu do informacji o polu koła, ale uniemożliwia im bezpośredni dostęp do metody obliczającej pole. Metody prywatne są ważne, ponieważ pozwalają na ukrycie szczegółów implementacyjnych i zapewniają integralność danych.</p>
         </div>
         <div style="background-color: #2A86BA">
-          <h1>Czym jest hermetyzacja w java?</h1>
-          <p>Hermetyzacja (enkapsulacja) pozwala ograniczyć dostęp do danych składowych, metod obiektów klas poprzez ich ukrycie “na zewnątrz” (np: przed innymi obiektami). Dostęp do tych elementów odbywa się poprzez tzw. modyfikatory dostępu.</p>
+          <h1>Więc czym jest hermetyzacja?</h1>
+          <p>Hermetyzacja to pojęcie związane z programowaniem obiektowym i oznacza ograniczenie dostępu do pól i metod klasy. Hermetyzacja jest ważnym aspektem projektowania klas, ponieważ pozwala na zapewnienie integralności danych i zapobiega niepożądanym zmianom w kodzie. Ograniczenie dostępu do pól i metod prywatnych lub chronionych zapewnia, że inne klasy nie mogą ingerować w wewnętrzne działanie klasy i zapobiega błędom i nieoczekiwanym zachowaniom w aplikacji.</p>
+        </div>
+        <div style="background-color: #2A86BA">
+          <h1>Przykład i wyjaśnienie hermetyzacj</h1>
+          <p>W przykładzie obok hermetyzacja jest stosowana do pola balance klasy BankAccount. Pole to jest prywatne, co oznacza, że nie jest dostępne dla innych klas. Zamiast tego, aby umożliwić innym klasom dostęp do stanu konta, została utworzona metoda publiczna getBalance, która zwraca aktualny stan konta. To zapewnia, że inne klasy nie mogą bezpośrednio zmieniać stanu konta, ale mogą tylko go odczytać za pomocą metody getBalance.</p>
         </div>
         <div style="background-color: #252E33">
           <h1>Czym są konstruktory w java?</h1>
           <p>
-            Konstruktory w Javie to specjalne metody używane do inicjowania obiektów. Można ich użyć do ustawienia wartości początkowych dla atrybutów obiektu</p>
+            W Javie konstruktor to specjalna metoda, która jest używana do tworzenia obiektów. Konstruktory są tworzone automatycznie dla każdej klasy i są wywoływane podczas tworzenia nowego obiektu. Można stworzyć kilka różnych konstruktorów dla jednej klasy, ale nie mogą one mieć tego samego podpisu (czyli takiej samej listy argumentów).</p>
         </div>
         <div style="background-color: #FFB866">
           <h1>Strona o programowaniu</h1>
@@ -39,6 +50,9 @@
         <div style="background-image: url('images/2.png')"></div>
         <div style="background-image: url('images/3.png')"></div>
         <div style="background-image: url('images/4.png')"></div>
+        <div style="background-image: url('images/5.png')"></div>
+        <div style="background-image: url('images/6.png')"></div>
+        <div style="background-image: url('images/7.png')"></div>
       </div>
       <div class="action-buttons">
         <button class="down-button">
